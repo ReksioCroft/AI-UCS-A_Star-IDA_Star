@@ -38,7 +38,7 @@ class StareGraph:
             if matrix[poz[0]][poz[1]] == '#':
                 m_aux = copy.deepcopy(stare_curenta.matrix)
                 m_aux[poz[0]][poz[1]] = 'o'
-                nod = StareGraph(matrix=m_aux, robinet=stare_curenta.robinet, canal=stare_curenta.canal, val=stare_curenta.val + StareGraph.calc_val_vecini(matrix, poz), tata=stare_curenta, msg="Eliminam obstacolul de pe linia " + str(poz[0]) + ", coloana " + str(poz[1]) + '\n')
+                nod = StareGraph(matrix=m_aux, robinet=stare_curenta.robinet, canal=stare_curenta.canal, val=stare_curenta.val + StareGraph.calc_val_vecini(m_aux, poz), tata=stare_curenta, msg="Eliminam obstacolul de pe linia " + str(poz[0]) + ", coloana " + str(poz[1]) + '\n')
                 if nod not in l_succesori:
                     l_succesori.append(nod)
             elif matrix[poz[0]][poz[1]] == 'o':
@@ -89,28 +89,27 @@ class Graph:
 
     @classmethod
     def calc_cost_till_end(cls, euristica, current_state):
-        if euristica == "banala" or StareGraph.is_final_state(state=current_state):
+        if euristica == "banala" or StareGraph.is_final_state(current_state):
             return current_state.val
         elif euristica == "urmatorul_pas":
             l_succesori_euristica = StareGraph.generare_succesori(current_state)
-            best_value = l_succesori_euristica[0].val
+            best_value = float('+inf')
             for i in l_succesori_euristica:
                 if i.val < best_value:
                     best_value = i.val
-            return current_state.val + best_value
+            return best_value
         elif euristica == "peste_2_pasi":
-            best_value = None
+            best_value = float('+inf')
             l_succesori_euristica = StareGraph.generare_succesori(current_state)
             for i in l_succesori_euristica:
                 if StareGraph.is_final_state(i):
-                    if best_value is None or i.val < best_value:
+                    if i.val < best_value:
                         best_value = i.val
                 else:
                     for j in StareGraph.generare_succesori(i):
-                        if best_value is None or j.val < best_value:
+                        if j.val < best_value:
                             best_value = j.val
             return best_value
-
         else:
             raise Exception("Eurisitca necunoscuta")
 
@@ -123,6 +122,7 @@ class Graph:
         Graph.fill(m, state.robinet)
         for i in m[1:len(m) - 1]:  # excludem bordarea
             self.fout.write(str(i[1:len(i) - 1]) + '\n')
+        self.fout.write("Cost actual: {}\n".format(state.val))
         self.fout.write('...........\n')
 
     def ucs(self, nr_solutii=1, timeout=60):
@@ -131,14 +131,17 @@ class Graph:
         pq = PriorityQueue()
         pq.put((0, state))
         co_solutii = 0
+        stari_finale = []
         self.fout.write("===========\n")
 
         while not pq.empty():
             _, state = pq.get()
             if StareGraph.is_final_state(state):  # daca e stare finala, ma opresc
-                co_solutii += 1
-                self.fout.write("...........\nUCS {}:\n".format(co_solutii))
-                self.afis_drum(state, [0])
+                if state not in stari_finale:
+                    co_solutii += 1
+                    self.fout.write("...........\nUCS {}:\n".format(co_solutii))
+                    self.afis_drum(state, [0])
+                    stari_finale.append(state)
                 if co_solutii < nr_solutii:
                     continue
                 else:
@@ -183,13 +186,16 @@ class Graph:
         q = PriorityQueue()
         co_solutii = 0
         t0 = time.time()
+        stari_finale = []
         q.put((Graph.calc_cost_till_end(euristica=euristica, current_state=state), state))
         while not q.empty():
             _, state = q.get()
             if StareGraph.is_final_state(state):  # daca e stare finala, ma opresc
-                co_solutii += 1
-                self.fout.write("AStar {} (euristica {}):\n".format(co_solutii, euristica))
-                self.afis_drum(state, [0])
+                if state not in stari_finale:
+                    stari_finale.append(state)
+                    co_solutii += 1
+                    self.fout.write("AStar {} (euristica {}):\n".format(co_solutii, euristica))
+                    self.afis_drum(state, [0])
                 if co_solutii < nr_solutii:
                     continue
                 else:
@@ -202,6 +208,44 @@ class Graph:
 
         self.fout.write("===========\n...........\n")
 
+    def ida_star(self, euristica="banala", nr_solutii=1, timeout=60):
+        def recursie_ida_star(cost_euristic_stare_curenta, stare):
+            if cost_euristic_stare_curenta > limita_cost_recursie:
+                return cost_euristic_stare_curenta
+            elif StareGraph.is_final_state(stare):
+                if stare not in stari_finale:
+                    stari_finale.append(stare)
+                return float('+inf')
+            elif len(stari_finale) < nr_solutii and time.time() - t0 <= timeout:
+                lista_succesori = StareGraph.generare_succesori(stare)
+                best_cost_recursie = float('+inf')
+                for stare_urmatoare in lista_succesori:
+                    if len(stari_finale) >= nr_solutii or time.time() - t0 > timeout:
+                        return cost_euristic_stare_curenta
+                    cost_nou_recursie = recursie_ida_star(Graph.calc_cost_till_end(current_state=stare_urmatoare, euristica=euristica), stare_urmatoare)
+                    if cost_nou_recursie < best_cost_recursie:
+                        best_cost_recursie = cost_nou_recursie
+                return best_cost_recursie
+            else:
+                return cost_euristic_stare_curenta
+
+        self.fout.write("===========\n")
+        t0 = time.time()
+        stari_finale = []
+        cost_stare0 = Graph.calc_cost_till_end(euristica=euristica, current_state=self.stare0)
+        limita_cost_recursie = cost_stare0
+        while len(stari_finale) < nr_solutii:
+            limita_cost_recursie = recursie_ida_star(cost_stare0, self.stare0)
+            if time.time() - t0 > timeout:
+                break
+
+        for i in range(min(nr_solutii, len(stari_finale))):  # range(min(nr_solutii, len(stari_finale))):
+            self.fout.write("IDA Star {} (euristica {}):\n".format(i + 1, euristica))
+            self.afis_drum(state=stari_finale[i], co=[0])
+
+        if time.time() - t0 > timeout:
+            self.fout.write("Timeout...\n")
+
 
 if __name__ == "__main__":
     inputPath = input("cale folder fișier intrare (./folder/): ")
@@ -213,22 +257,29 @@ if __name__ == "__main__":
         fout = open(outputPath + inputFile + '.out', 'w')
         graph = Graph(fin, fout)
 
-        print("ucs")
-        graph.ucs(nr_solutii=nSol, timeout=timeout)
+        # print("ucs")
+        # graph.ucs(nr_solutii=nSol, timeout=timeout)
+        #
+        # print("a star")
+        # graph.a_star(euristica="banala", nr_solutii=nSol, timeout=timeout)
+        # print()
+        # graph.a_star(euristica="urmatorul_pas", nr_solutii=nSol, timeout=timeout)
+        # print()
+        # graph.a_star(euristica="peste_2_pasi", nr_solutii=nSol, timeout=timeout)
+        #
+        # print("a star optim")
+        # graph.a_star_optimizat(euristica="banala", timeout=timeout)
+        # print()
+        # graph.a_star_optimizat(euristica="urmatorul_pas", timeout=timeout)
+        # print()
+        # graph.a_star_optimizat(euristica="peste_2_pasi", timeout=timeout)
 
-        print("a star")
-        graph.a_star(euristica="banala", nr_solutii=nSol, timeout=timeout)
+        print("ida star")
+        graph.ida_star(euristica="banala", timeout=timeout, nr_solutii=nSol)
         print()
-        graph.a_star(euristica="urmatorul_pas", nr_solutii=nSol, timeout=timeout)
-        print()
-        graph.a_star(euristica="peste_2_pasi", nr_solutii=nSol, timeout=timeout)
-
-        print("a star optim")
-        graph.a_star_optimizat(euristica="banala", timeout=timeout)
-        print()
-        graph.a_star_optimizat(euristica="urmatorul_pas", timeout=timeout)
-        print()
-        graph.a_star_optimizat(euristica="peste_2_pasi", timeout=timeout)
+        graph.ida_star(euristica="urmatorul_pas", timeout=timeout, nr_solutii=nSol)
+        # print()
+        # graph.ida_star(euristica="peste_2_pasi", timeout=timeout)
 
         fin.close()
         fout.close()
