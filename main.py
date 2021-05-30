@@ -268,7 +268,8 @@ class Graph:
             if StareGraph.is_final_state(state):
                 if state not in stari_finale:
                     co_solutii += 1
-                    self.fout.write("...........\nUCS {}:\n".format(co_solutii))
+                    self.fout.write("\n-----------\n")
+                    self.fout.write("UCS {}:\n".format(co_solutii))
                     self.afis_drum(state, [0])
                     stari_finale.append(state)
                 if co_solutii < nr_solutii:
@@ -306,6 +307,7 @@ class Graph:
             opened.remove(state)
             closed.append(state)
             if StareGraph.is_final_state(state):  # daca e stare finala, o aifsez si ma opresc
+                self.fout.write("\n-----------\n")
                 self.fout.write("AStar Optim (euristica {}):\n".format(euristica))
                 self.afis_drum(state, [0])
                 break
@@ -343,6 +345,7 @@ class Graph:
                 if state not in stari_finale:
                     stari_finale.append(state)
                     co_solutii += 1
+                    self.fout.write("\n-----------\n")
                     self.fout.write("AStar {} (euristica {}):\n".format(co_solutii, euristica))
                     self.afis_drum(state, [0])
                 if co_solutii < nr_solutii:
@@ -383,6 +386,7 @@ class Graph:
             elif StareGraph.is_final_state(stare):
                 if stare not in stari_finale:
                     stari_finale.append(stare)
+                    self.fout.write("\n-----------\n")
                     self.fout.write("IDA Star {} (euristica {}):\n".format(len(stari_finale), euristica))
                     self.fout.write("Nr calculate dupa aceasta solutie: {}\n".format(str(recursie_ida_star.co_noduri_calculate)))
                     self.afis_drum(state=stare, co=[0])

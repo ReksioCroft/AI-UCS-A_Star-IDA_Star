@@ -1,5 +1,6 @@
 ===========
-...........
+
+-----------
 UCS 1:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 72
 1) Configuratie Initiala
@@ -36,7 +37,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -54,9 +55,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
-...........
+
+-----------
 UCS 2:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 447
 1) Configuratie Initiala
@@ -93,7 +95,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -111,7 +113,7 @@ Timp gasire: 0.0006s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.02613s
+Timp gasire: 0.0266s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -129,9 +131,10 @@ Timp gasire: 0.02613s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05429s
+Timp gasire: 0.05461s
 ...........
-...........
+
+-----------
 UCS 3:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 495
 1) Configuratie Initiala
@@ -168,7 +171,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -186,7 +189,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.0053s
+Timp gasire: 0.00489s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -204,9 +207,10 @@ Timp gasire: 0.0053s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.04526s
+Timp gasire: 0.04538s
 ...........
-...........
+
+-----------
 UCS 4:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 691
 1) Configuratie Initiala
@@ -243,7 +247,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -261,9 +265,10 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
-...........
+
+-----------
 UCS 5:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -300,7 +305,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -318,10 +323,12 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
 ===========
 ===========
+
+-----------
 AStar 1 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -358,7 +365,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -376,8 +383,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
+
+-----------
 AStar 2 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -414,7 +423,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -432,7 +441,7 @@ Timp gasire: 0.0006s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.02613s
+Timp gasire: 0.0266s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -450,8 +459,10 @@ Timp gasire: 0.02613s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05429s
+Timp gasire: 0.05461s
 ...........
+
+-----------
 AStar 3 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -488,7 +499,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -506,7 +517,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.0053s
+Timp gasire: 0.00489s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -524,8 +535,10 @@ Timp gasire: 0.0053s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.04526s
+Timp gasire: 0.04538s
 ...........
+
+-----------
 AStar 4 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -562,7 +575,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -580,8 +593,10 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
+
+-----------
 AStar 5 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 715
 1) Configuratie Initiala
@@ -618,7 +633,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -636,11 +651,13 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 728
 1) Configuratie Initiala
@@ -677,7 +694,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -695,8 +712,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
+
+-----------
 AStar 2 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 2108
 1) Configuratie Initiala
@@ -733,7 +752,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00202s
+Timp gasire: 0.00195s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -751,7 +770,7 @@ Timp gasire: 0.00202s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.00645s
+Timp gasire: 0.00605s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -769,8 +788,10 @@ Timp gasire: 0.00645s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.0389s
+Timp gasire: 0.03894s
 ...........
+
+-----------
 AStar 3 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 2108
 1) Configuratie Initiala
@@ -807,7 +828,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -825,7 +846,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.0036s
+Timp gasire: 0.00322s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -843,8 +864,10 @@ Timp gasire: 0.0036s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05133s
+Timp gasire: 0.05163s
 ...........
+
+-----------
 AStar 4 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 2424
 1) Configuratie Initiala
@@ -881,7 +904,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -899,8 +922,10 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
+
+-----------
 AStar 5 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 2424
 1) Configuratie Initiala
@@ -937,7 +962,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -955,11 +980,13 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 3651
 1) Configuratie Initiala
@@ -996,7 +1023,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1014,8 +1041,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
+
+-----------
 AStar 2 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 12176
 1) Configuratie Initiala
@@ -1052,7 +1081,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00202s
+Timp gasire: 0.00195s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -1070,7 +1099,7 @@ Timp gasire: 0.00202s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.00645s
+Timp gasire: 0.00605s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1088,8 +1117,10 @@ Timp gasire: 0.00645s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.0389s
+Timp gasire: 0.03894s
 ...........
+
+-----------
 AStar 3 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 12176
 1) Configuratie Initiala
@@ -1126,7 +1157,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -1144,7 +1175,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.0036s
+Timp gasire: 0.00322s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1162,8 +1193,10 @@ Timp gasire: 0.0036s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05133s
+Timp gasire: 0.05163s
 ...........
+
+-----------
 AStar 4 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15144
 1) Configuratie Initiala
@@ -1200,7 +1233,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1218,8 +1251,10 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
+
+-----------
 AStar 5 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15144
 1) Configuratie Initiala
@@ -1256,7 +1291,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1274,11 +1309,13 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1315,7 +1352,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1333,8 +1370,10 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
+
+-----------
 AStar 2 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1371,7 +1410,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -1389,7 +1428,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 8
-Timp gasire: 0.03122s
+Timp gasire: 0.03154s
 ...........
 4) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1407,8 +1446,10 @@ Timp gasire: 0.03122s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 12
-Timp gasire: 0.09904s
+Timp gasire: 0.09882s
 ...........
+
+-----------
 AStar 3 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1445,7 +1486,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 2
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -1463,7 +1504,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03142s
+Timp gasire: 0.03176s
 ...........
 4) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1481,8 +1522,10 @@ Timp gasire: 0.03142s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 14
-Timp gasire: 0.23041s
+Timp gasire: 0.22695s
 ...........
+
+-----------
 AStar 4 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1519,7 +1562,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -1537,7 +1580,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 8
-Timp gasire: 0.03122s
+Timp gasire: 0.03154s
 ...........
 4) Eliminam obstacolul de pe linia 7, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -1555,7 +1598,7 @@ Timp gasire: 0.03122s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 4
 Cost actual: 12
-Timp gasire: 0.10048s
+Timp gasire: 0.10025s
 ...........
 5) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1573,8 +1616,10 @@ Timp gasire: 0.10048s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 5
 Cost actual: 16
-Timp gasire: 5.20247s
+Timp gasire: 3.83521s
 ...........
+
+-----------
 AStar 5 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1611,7 +1656,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 3
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -1629,7 +1674,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03102s
+Timp gasire: 0.03135s
 ...........
 4) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1647,11 +1692,13 @@ Timp gasire: 0.03102s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 14
-Timp gasire: 0.22676s
+Timp gasire: 0.22314s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1688,7 +1735,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1706,11 +1753,13 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1747,7 +1796,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1765,11 +1814,13 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1806,7 +1857,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1824,11 +1875,13 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
 1) Configuratie Initiala
@@ -1865,7 +1918,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -1883,11 +1936,13 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
 ===========
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica banala):
 Nr calculate dupa aceasta solutie: 72
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -1925,7 +1980,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -1943,8 +1998,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
+
+-----------
 IDA Star 2 (euristica banala):
 Nr calculate dupa aceasta solutie: 641
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -1982,7 +2039,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -2000,7 +2057,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.0036s
+Timp gasire: 0.00322s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2018,8 +2075,10 @@ Timp gasire: 0.0036s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05133s
+Timp gasire: 0.05163s
 ...........
+
+-----------
 IDA Star 3 (euristica banala):
 Nr calculate dupa aceasta solutie: 701
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2057,7 +2116,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -2075,7 +2134,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.0053s
+Timp gasire: 0.00489s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2093,8 +2152,10 @@ Timp gasire: 0.0053s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.04526s
+Timp gasire: 0.04538s
 ...........
+
+-----------
 IDA Star 4 (euristica banala):
 Nr calculate dupa aceasta solutie: 1366
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2132,7 +2193,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2150,8 +2211,10 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
+
+-----------
 IDA Star 5 (euristica banala):
 Nr calculate dupa aceasta solutie: 1426
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2189,7 +2252,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00079s
+Timp gasire: 0.00078s
 ...........
 3) Eliminam obstacolul de pe linia 3, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2207,9 +2270,11 @@ Timp gasire: 0.00079s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.00998s
+Timp gasire: 0.0098s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 36
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2247,7 +2312,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2265,8 +2330,10 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
+
+-----------
 IDA Star 2 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 168
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2304,7 +2371,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 8
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -2322,7 +2389,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 7
-Timp gasire: 0.0036s
+Timp gasire: 0.00322s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2340,8 +2407,10 @@ Timp gasire: 0.0036s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.05133s
+Timp gasire: 0.05163s
 ...........
+
+-----------
 IDA Star 3 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 180
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2379,7 +2448,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '*', '#', 'o']
@@ -2397,7 +2466,7 @@ Timp gasire: 0.00041s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 6
-Timp gasire: 0.0053s
+Timp gasire: 0.00489s
 ...........
 4) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2415,8 +2484,10 @@ Timp gasire: 0.0053s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 8
-Timp gasire: 0.04526s
+Timp gasire: 0.04538s
 ...........
+
+-----------
 IDA Star 4 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 384
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2454,7 +2525,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.0006s
+Timp gasire: 0.00059s
 ...........
 3) Eliminam obstacolul de pe linia 2, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2472,8 +2543,10 @@ Timp gasire: 0.0006s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02651s
+Timp gasire: 0.02698s
 ...........
+
+-----------
 IDA Star 5 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 396
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2511,7 +2584,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00079s
+Timp gasire: 0.00078s
 ...........
 3) Eliminam obstacolul de pe linia 3, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2529,9 +2602,11 @@ Timp gasire: 0.00079s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.00998s
+Timp gasire: 0.0098s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica peste_2_pasi):
 Nr calculate dupa aceasta solutie: 24
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2569,7 +2644,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 3
-Timp gasire: 0.00041s
+Timp gasire: 0.0004s
 ...........
 3) Eliminam obstacolul de pe linia 1, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
@@ -2587,9 +2662,11 @@ Timp gasire: 0.00041s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 5
-Timp gasire: 0.00339s
+Timp gasire: 0.00304s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 2954
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2627,7 +2704,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2645,8 +2722,10 @@ Timp gasire: 0.00099s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 3
 Cost actual: 9
-Timp gasire: 0.02999s
+Timp gasire: 0.03042s
 ...........
+
+-----------
 IDA Star 2 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 2966
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2684,7 +2763,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 5
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2702,7 +2781,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03076s
+Timp gasire: 0.03115s
 ...........
 4) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2720,8 +2799,10 @@ Timp gasire: 0.03076s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 14
-Timp gasire: 0.22335s
+Timp gasire: 0.21959s
 ...........
+
+-----------
 IDA Star 3 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 2978
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2759,7 +2840,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 5
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2777,7 +2858,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03076s
+Timp gasire: 0.03115s
 ...........
 4) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2795,7 +2876,7 @@ Timp gasire: 0.03076s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 4
 Cost actual: 13
-Timp gasire: 0.22489s
+Timp gasire: 0.22126s
 ...........
 5) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2813,8 +2894,10 @@ Timp gasire: 0.22489s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 5
 Cost actual: 17
-Timp gasire: 5.12483s
+Timp gasire: 3.75461s
 ...........
+
+-----------
 IDA Star 4 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 2990
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2852,7 +2935,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 3
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2870,7 +2953,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03102s
+Timp gasire: 0.03135s
 ...........
 4) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2888,8 +2971,10 @@ Timp gasire: 0.03102s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 4
 Cost actual: 14
-Timp gasire: 0.22676s
+Timp gasire: 0.22314s
 ...........
+
+-----------
 IDA Star 5 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 3002
 Nr de noduri aflate in memorie dupa generarea acestei sol: 15615
@@ -2927,7 +3012,7 @@ Timp gasire: 0.0s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 2
 Cost actual: 5
-Timp gasire: 0.00099s
+Timp gasire: 0.00097s
 ...........
 3) Eliminam obstacolul de pe linia 6, coloana 3
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2945,7 +3030,7 @@ Timp gasire: 0.00099s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 3
 Cost actual: 10
-Timp gasire: 0.03102s
+Timp gasire: 0.03135s
 ...........
 4) Eliminam obstacolul de pe linia 6, coloana 1
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', 'o']
@@ -2963,7 +3048,7 @@ Timp gasire: 0.03102s
 ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o']
 Lungime intermediara drum: 4
 Cost actual: 13
-Timp gasire: 0.22831s
+Timp gasire: 0.22475s
 ...........
 5) Eliminam obstacolul de pe linia 4, coloana 9
 ['*', '*', '*', '*', '*', '*', '*', '#', '#', '*']
@@ -2981,5 +3066,5 @@ Timp gasire: 0.22831s
 ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
 Lungime intermediara drum: 5
 Cost actual: 17
-Timp gasire: 5.16608s
+Timp gasire: 3.79619s
 ...........

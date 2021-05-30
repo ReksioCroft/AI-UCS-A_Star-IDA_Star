@@ -1,5 +1,6 @@
 ===========
-...........
+
+-----------
 UCS 1:
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -12,6 +13,8 @@ Timp gasire: 0.0s
 ...........
 ===========
 ===========
+
+-----------
 AStar 1 (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -25,6 +28,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -38,6 +43,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -51,6 +58,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar 1 (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -64,6 +73,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica banala):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -77,6 +88,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica urmatorul_pas):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -90,6 +103,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica peste_2_pasi):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -103,6 +118,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 AStar Optim (euristica distanta_manhattan_neadmisibila):
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
@@ -116,6 +133,8 @@ Timp gasire: 0.0s
 ===========
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica banala):
 Nr calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
@@ -128,6 +147,8 @@ Cost actual: 0
 Timp gasire: 0.0s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica urmatorul_pas):
 Nr calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
@@ -140,6 +161,8 @@ Cost actual: 0
 Timp gasire: 0.0s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica peste_2_pasi):
 Nr calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
@@ -152,6 +175,8 @@ Cost actual: 0
 Timp gasire: 0.0s
 ...........
 ===========
+
+-----------
 IDA Star 1 (euristica distanta_manhattan_neadmisibila):
 Nr calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
