@@ -260,6 +260,7 @@ class Graph:
         pq = PriorityQueue()
         pq.put((0, state))
         co_solutii = 0
+        co_noduri_calculate = 0
         stari_finale = []
         self.fout.write("===========\n")
 
@@ -270,6 +271,7 @@ class Graph:
                     co_solutii += 1
                     self.fout.write("\n-----------\n")
                     self.fout.write("UCS {}:\n".format(co_solutii))
+                    self.fout.write("Nr noduri calculate dupa aceasta solutie: {}\n".format(str(co_noduri_calculate)))
                     self.afis_drum(state, [0])
                     stari_finale.append(state)
                 if co_solutii < nr_solutii:
@@ -281,7 +283,7 @@ class Graph:
                 break
             for nextState in StareGraph.generare_succesori(state):
                 pq.put((nextState.val, nextState))
-
+            co_noduri_calculate += len(StareGraph.generare_succesori(state))
         self.fout.write("===========\n")
 
     def a_star_optimizat(self, euristica="peste_2_pasi", timeout=60):
@@ -300,6 +302,7 @@ class Graph:
         Graph.t0 = time.time()
         q = PriorityQueue()
         q.put((Graph.calc_cost_till_end(euristica=euristica, current_state=state), state))
+        co_noduri_calculate = 0
         closed = []
         opened = [state]
         while not q.empty():
@@ -309,6 +312,7 @@ class Graph:
             if StareGraph.is_final_state(state):  # daca e stare finala, o aifsez si ma opresc
                 self.fout.write("\n-----------\n")
                 self.fout.write("AStar Optim (euristica {}):\n".format(euristica))
+                self.fout.write("Nr noduri calculate dupa aceasta solutie: {}\n".format(str(co_noduri_calculate)))
                 self.afis_drum(state, [0])
                 break
             if time.time() - Graph.t0 > timeout:
@@ -318,7 +322,7 @@ class Graph:
                 if nextState not in closed and nextState not in opened:
                     q.put((Graph.calc_cost_till_end(euristica=euristica, current_state=nextState), nextState))  # am verificat deja sa nu se repete in generare_succesori
                     opened.append(nextState)  # pt a nu repeta
-
+            co_noduri_calculate += len(StareGraph.generare_succesori(state))
         self.fout.write("===========\n...........\n")
 
     def a_star(self, euristica="urmatorul_pas", nr_solutii=1, timeout=60):
@@ -336,6 +340,7 @@ class Graph:
         state = self.stare0
         q = PriorityQueue()
         co_solutii = 0
+        co_noduri_calculate = 0
         Graph.t0 = time.time()
         stari_finale = []
         q.put((Graph.calc_cost_till_end(euristica=euristica, current_state=state), state))
@@ -347,6 +352,7 @@ class Graph:
                     co_solutii += 1
                     self.fout.write("\n-----------\n")
                     self.fout.write("AStar {} (euristica {}):\n".format(co_solutii, euristica))
+                    self.fout.write("Nr noduri calculate dupa aceasta solutie: {}\n".format(str(co_noduri_calculate)))
                     self.afis_drum(state, [0])
                 if co_solutii < nr_solutii:
                     continue
@@ -357,7 +363,7 @@ class Graph:
                 break
             for nextState in StareGraph.generare_succesori(state):  # altfel, parcurg succesorii
                 q.put((Graph.calc_cost_till_end(euristica=euristica, current_state=nextState), nextState))  # am verificat deja sa nu se repete in generare_succesori
-
+            co_noduri_calculate += len(StareGraph.generare_succesori(state))
         self.fout.write("===========\n...........\n")
 
     def ida_star(self, euristica="banala", nr_solutii=1, timeout=60):
@@ -388,7 +394,7 @@ class Graph:
                     stari_finale.append(stare)
                     self.fout.write("\n-----------\n")
                     self.fout.write("IDA Star {} (euristica {}):\n".format(len(stari_finale), euristica))
-                    self.fout.write("Nr calculate dupa aceasta solutie: {}\n".format(str(recursie_ida_star.co_noduri_calculate)))
+                    self.fout.write("Nr noduri calculate dupa aceasta solutie: {}\n".format(str(recursie_ida_star.co_noduri_calculate)))
                     self.afis_drum(state=stare, co=[0])
                 return float('+inf')
             elif len(stari_finale) < nr_solutii and time.time() - Graph.t0 <= timeout:

@@ -2,6 +2,7 @@
 
 -----------
 UCS 1:
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -16,6 +17,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar 1 (euristica banala):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -31,6 +33,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar 1 (euristica urmatorul_pas):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -46,6 +49,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar 1 (euristica peste_2_pasi):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -61,6 +65,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar 1 (euristica distanta_manhattan_neadmisibila):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -76,6 +81,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar Optim (euristica banala):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -91,6 +97,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar Optim (euristica urmatorul_pas):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -106,6 +113,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar Optim (euristica peste_2_pasi):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -121,6 +129,7 @@ Timp gasire: 0.0s
 
 -----------
 AStar Optim (euristica distanta_manhattan_neadmisibila):
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -136,7 +145,7 @@ Timp gasire: 0.0s
 
 -----------
 IDA Star 1 (euristica banala):
-Nr calculate dupa aceasta solutie: 0
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -150,7 +159,7 @@ Timp gasire: 0.0s
 
 -----------
 IDA Star 1 (euristica urmatorul_pas):
-Nr calculate dupa aceasta solutie: 0
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -164,7 +173,7 @@ Timp gasire: 0.0s
 
 -----------
 IDA Star 1 (euristica peste_2_pasi):
-Nr calculate dupa aceasta solutie: 0
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
@@ -178,7 +187,7 @@ Timp gasire: 0.0s
 
 -----------
 IDA Star 1 (euristica distanta_manhattan_neadmisibila):
-Nr calculate dupa aceasta solutie: 0
+Nr noduri calculate dupa aceasta solutie: 0
 Nr de noduri aflate in memorie dupa generarea acestei sol: 0
 1) Configuratie Initiala
 ['#', '#', '#', 'o', 'o', 'o', 'o', 'o']
