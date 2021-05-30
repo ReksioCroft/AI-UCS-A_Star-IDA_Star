@@ -138,7 +138,15 @@ class Graph:
                     matrix.append([None] * (len(i.strip()) + 2))
                 matrix.append([None] + list(i.strip()) + [None])
             matrix.append([None] * len(matrix[0]))
-            if matrix[robinet[0]][robinet[1]] != 'o':
+            if robinet[0] < 1 or robinet[0] >= len(matrix) - 1:
+                raise Exception("Input invalid: Pozitie linie robinet incorecta")
+            elif robinet[1] < 1 or robinet[1] >= len(matrix[0]) - 1:
+                raise Exception("Input invalid: Pozitie coloana robinet incorecta")
+            elif canal[0] < 1 or canal[0] >= len(matrix) - 1:
+                raise Exception("Input invalid: Pozitie linie canal incorecta")
+            elif canal[1] < 1 or canal[1] >= len(matrix[0]) - 1:
+                raise Exception("Input invalid: Pozitie coloana canal incorecta")
+            elif matrix[robinet[0]][robinet[1]] != 'o':
                 raise Exception("Input invalid: robinet astupat")
             elif matrix[canal[0]][canal[1]] != 'o':
                 raise Exception("Input invalid: canal astupat")
