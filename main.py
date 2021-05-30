@@ -408,11 +408,14 @@ class Graph:
         limita_cost_recursie = cost_stare0
         recursie_ida_star.co_noduri_calculate = 0
 
-        while len(stari_finale) < nr_solutii:
-            limita_cost_recursie = recursie_ida_star(cost_stare0, self.stare0)
-            if time.time() - Graph.t0 > timeout:
-                self.fout.write("Timeout...\n")
-                break
+        if StareGraph.is_final_state(state=self.stare0):
+            recursie_ida_star(cost_stare0, self.stare0)
+        else:
+            while len(stari_finale) < nr_solutii:
+                limita_cost_recursie = recursie_ida_star(cost_stare0, self.stare0)
+                if time.time() - Graph.t0 > timeout:
+                    self.fout.write("Timeout...\n")
+                    break
 
 
 if __name__ == "__main__":
@@ -427,46 +430,49 @@ if __name__ == "__main__":
     nSol = int(input("Număr soluții căutate: "))
     timeout = int(input("Timeout: "))
     for inputFile in listdir(inputPath):
-        fin = open(inputPath + inputFile, 'r')
-        fout = open(outputPath + inputFile + '.out', 'w')
-        graph = Graph(fin, fout)
+        try:
+            print(inputPath + inputFile)
 
-        print(inputPath + inputFile)
+            fin = open(inputPath + inputFile, 'r')
+            fout = open(outputPath + inputFile + '.out', 'w')
+            graph = Graph(fin, fout)
 
-        print("ucs")
-        graph.ucs(nr_solutii=nSol, timeout=timeout)
+            print("ucs")
+            graph.ucs(nr_solutii=nSol, timeout=timeout)
 
-        print("a star")
-        print("banala")
-        graph.a_star(euristica="banala", nr_solutii=nSol, timeout=timeout)
-        print("urmatorul_pas")
-        graph.a_star(euristica="urmatorul_pas", nr_solutii=nSol, timeout=timeout)
-        print("peste 2 pasi")
-        graph.a_star(euristica="peste_2_pasi", nr_solutii=nSol, timeout=timeout)
-        print("neadmisibila manhattan")
-        graph.a_star(euristica="distanta_manhattan_neadmisibila", nr_solutii=nSol, timeout=timeout)
+            print("a star")
+            print("banala")
+            graph.a_star(euristica="banala", nr_solutii=nSol, timeout=timeout)
+            print("urmatorul_pas")
+            graph.a_star(euristica="urmatorul_pas", nr_solutii=nSol, timeout=timeout)
+            print("peste 2 pasi")
+            graph.a_star(euristica="peste_2_pasi", nr_solutii=nSol, timeout=timeout)
+            print("neadmisibila manhattan")
+            graph.a_star(euristica="distanta_manhattan_neadmisibila", nr_solutii=nSol, timeout=timeout)
 
-        print("a star optim")
-        print("banala")
-        graph.a_star_optimizat(euristica="banala", timeout=timeout)
-        print("urmatorul_pas")
-        graph.a_star_optimizat(euristica="urmatorul_pas", timeout=timeout)
-        print("peste 2 pasi")
-        graph.a_star_optimizat(euristica="peste_2_pasi", timeout=timeout)
-        print("neadmisibila manhattan")
-        graph.a_star_optimizat(euristica="distanta_manhattan_neadmisibila", timeout=timeout)
+            print("a star optim")
+            print("banala")
+            graph.a_star_optimizat(euristica="banala", timeout=timeout)
+            print("urmatorul_pas")
+            graph.a_star_optimizat(euristica="urmatorul_pas", timeout=timeout)
+            print("peste 2 pasi")
+            graph.a_star_optimizat(euristica="peste_2_pasi", timeout=timeout)
+            print("neadmisibila manhattan")
+            graph.a_star_optimizat(euristica="distanta_manhattan_neadmisibila", timeout=timeout)
 
-        print("ida star")
-        print("banala")
-        graph.ida_star(euristica="banala", timeout=timeout, nr_solutii=nSol)
-        print("urmatorul_pas")
-        graph.ida_star(euristica="urmatorul_pas", timeout=timeout, nr_solutii=nSol)
-        print("peste 2 pasi")
-        graph.ida_star(euristica="peste_2_pasi", timeout=timeout)
-        print("neadmisibila manhattan")
-        graph.ida_star(euristica="distanta_manhattan_neadmisibila", nr_solutii=nSol, timeout=timeout)
+            print("ida star")
+            print("banala")
+            graph.ida_star(euristica="banala", timeout=timeout, nr_solutii=nSol)
+            print("urmatorul_pas")
+            graph.ida_star(euristica="urmatorul_pas", timeout=timeout, nr_solutii=nSol)
+            print("peste 2 pasi")
+            graph.ida_star(euristica="peste_2_pasi", timeout=timeout)
+            print("neadmisibila manhattan")
+            graph.ida_star(euristica="distanta_manhattan_neadmisibila", nr_solutii=nSol, timeout=timeout)
 
-        del graph
+            del graph
 
-        fin.close()
-        fout.close()
+            fin.close()
+            fout.close()
+        except Exception as e:
+            print(e)
